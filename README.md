@@ -6,25 +6,31 @@
 
 ```bash
 CashFlowDiagramDrawer-main/
+├── README.md
+├── LICENCE
+├── CHANGELOG.md
 ├── cash_flow_diagram.exe
-├── icon.ico
 ├── cash_flow_diagram.py
 ├── data.xlsx
 ├── CashFlowDiagram.png
+├── icon.ico
 └── md_pic/
     └── ...
 ```
 
 以下是各文件/文件夹用途：
 
-| 文件/文件夹                    | 用途                                                   |
+| 文件/文件夹                     | 用途                                                   |
 | ------------------------------ | ------------------------------------------------------ |
-| cash_flow_diagram.exe          | 绘图工具的可执行文件                                   |
-| icon.ico                       | 可执行文件的图标                                       |
-| cash_flow_diagram.py           | 绘图工具的Python源代码                                 |
-| data.xlsx                      | 数据文件的模板案例                                     |
-| CashFlowDiagram.png            | 绘图工具根据data.xlsx生成的现金流量图                  |
-| md_pic                         | 现金流量图绘图工具使用说明的markdown文件中的图片源     |
+| README.md                      | 项目的说明文件                                          |
+| LICENCE                        | 项目的开源协议                                          |
+| CHANGELOG.md                   | 项目的更新日志                                          |
+| cash_flow_diagram.exe          | 绘图工具的可执行文件                                     |
+| cash_flow_diagram.py           | 绘图工具的Python源代码                                   |
+| data.xlsx                      | 数据文件的模板案例                                       |
+| CashFlowDiagram.png            | 绘图工具根据data.xlsx生成的现金流量图                     |
+| icon.ico                       | 可执行文件的图标                                         |
+| md_pic                         | 现金流量图绘图工具使用说明的markdown文件中的图片源         |
 
 以下是绘图工具的使用方法：
 
