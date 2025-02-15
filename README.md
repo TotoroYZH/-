@@ -9,11 +9,8 @@ Cash Flow Diagram Drawer/
 ├── cash_flow_diagram.py
 ├── data.xlsx
 ├── CashFlowDiagram.png
-├── 现金流量图绘图工具使用说明.md
-├── md_pic/
-│   ├── data.png
-│   └── Save the figure.png
-└── 现金流量图绘图工具使用说明.pdf
+└── md_pic/
+    └── ...
 ```
 
 以下是各文件/文件夹用途：
@@ -25,8 +22,6 @@ Cash Flow Diagram Drawer/
 | cash_flow_diagram.py           | 绘图工具的Python源代码                                 |
 | data.xlsx                      | 数据文件的模板案例                                     |
 | CashFlowDiagram.png            | 绘图工具根据data.xlsx生成的现金流量图                  |
-| 现金流量图绘图工具使用说明.md  | 现金流量图绘图工具使用说明的markdown文件（适用于编辑） |
-| 现金流量图绘图工具使用说明.pdf | 现金流量图绘图工具使用说明的pdf文件（适用于浏览）      |
 | md_pic                         | 现金流量图绘图工具使用说明的markdown文件中的图片源     |
 
 以下是绘图工具的使用方法：
