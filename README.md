@@ -1,9 +1,9 @@
 ### 现金流量图绘图工具使用说明
 
-该绘图工具文件夹的目录结构如下：
+该绘图工具项目仓库的目录结构如下：
 
 ```bash
-Cash Flow Diagram Drawer/
+CashFlowDiagramDrawer/
 ├── cash_flow_diagram.exe
 ├── icon.ico
 ├── cash_flow_diagram.py
