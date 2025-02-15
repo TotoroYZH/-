@@ -5,7 +5,7 @@
 该绘图工具项目仓库的目录结构如下：
 
 ```bash
-CashFlowDiagramDrawer/
+CashFlowDiagramDrawer-main/
 ├── cash_flow_diagram.exe
 ├── icon.ico
 ├── cash_flow_diagram.py
