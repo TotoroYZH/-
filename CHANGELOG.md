@@ -17,7 +17,7 @@
 - 将项目源代码文件中直接创建对象并运行的写法改为主程序入口保护写法`if __name__ == '__main__':`
 
 ### Fixed
-- 修正了项目源代码文件中Drawer类的docstring中错误的使用示例
+- 修正了项目源代码文件中Drawer类的docstring中错误的Attributes和Example
 
 ### Removed
 - 删除了原有的程序使用说明.md和.pdf文件
