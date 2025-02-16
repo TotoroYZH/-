@@ -21,8 +21,6 @@ class Drawer:
     Attributes:
         rd (str, optional): The path of the data file which needs to be a .xlsx file. Defaults to 'data.xlsx'.
         sheet_name (str, optional): The sheet containing the data. Defaults to 'Cash Flow Diagram'.
-        min_time (int, optional): The beginning year of cash flow diagram. Defaults to 2064.
-        max_time (int, optional): The ending year of cash flow diagram. Defaults to 2121.
 
     Example:
         >>> my_drawer = Drawer('C:/Users/Username/Documents/example.xlsx', 'example')
