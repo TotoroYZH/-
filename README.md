@@ -1,6 +1,6 @@
 ### 现金流量图绘图工具使用说明（version 2）
 
-**注意：项目已更新到version 2，旧版本的文件可在非main的其他分支（branch）或者release中查看**
+**注意：项目已更新到version 2，旧版本的文件可在非main的其他分支（branches）或者releases中查看**
 
 **如何下载项目文件到本地？**：点击仓库最上方的绿色Code按钮，点击Download Zip即可下载项目文件的压缩包
 
