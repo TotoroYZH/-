@@ -28,4 +28,4 @@
 
 ## [2.0.0] - 2025-02-22
 ### Added
-- 项目version 2首次上传
+- 项目version 2首次上传，利用`pyecharts`绘图
