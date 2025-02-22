@@ -62,7 +62,7 @@ CashFlowDiagramDrawer-main/
 
    在这种情况下，数据文件必须命名为`data.xlsx`且与`cash_flow_diagram.exe`处在同一路径下，且绘图数据必须存放在`data.xlsx`中名为`Cash Flow Diagram`的Sheet中。
 
-   在这种情况下，双击`cash_flow_diagram.exe`，会跳出Matplotlib的显示窗口。点击下方Save the figure按钮<img src="md_pic/Save the figure.png" alt="img" style="zoom:50%;" />，即可导出绘制出的现金流量图的`.png`文件。
+   在这种情况下，双击`cash_flow_diagram.exe`，会跳出渲染出的html网页。直接截图可获得图片文件。
 
    **方案2**：对Python源代码文件进行修改后再运行。这需要你拥有合适的Python3环境和相关第三方库。
 
