@@ -1,4 +1,6 @@
-### 现金流量图绘图工具使用说明
+### 现金流量图绘图工具使用说明（version 2）
+
+**注意：项目已更新到version 2，旧版本的文件可在非main的其他分支（branch）或者release中查看**
 
 **如何下载项目文件到本地？**：点击仓库最上方的绿色Code按钮，点击Download Zip即可下载项目文件的压缩包
 
@@ -9,10 +11,9 @@ CashFlowDiagramDrawer-main/
 ├── README.md
 ├── LICENCE
 ├── CHANGELOG.md
-├── cash_flow_diagram.exe
-├── cash_flow_diagram.py
+├── cash_flow_diagram2.py
 ├── data.xlsx
-├── CashFlowDiagram.png
+├── Cash Flow Diagram.html
 ├── icon.ico
 └── md_pic/
     └── ...
@@ -25,10 +26,9 @@ CashFlowDiagramDrawer-main/
 | README.md                      | 项目的说明文件                                          |
 | LICENCE                        | 项目的开源协议                                          |
 | CHANGELOG.md                   | 项目的更新日志                                          |
-| cash_flow_diagram.exe          | 绘图工具的可执行文件                                     |
-| cash_flow_diagram.py           | 绘图工具的Python源代码                                   |
+| cash_flow_diagram2.py          | 绘图工具的Python源代码                                   |
 | data.xlsx                      | 数据文件的模板案例                                       |
-| CashFlowDiagram.png            | 绘图工具根据data.xlsx生成的现金流量图                     |
+| Cash Flow Diagram.html         | 绘图工具根据data.xlsx生成的现金流量图（渲染成html文件）    |
 | icon.ico                       | 可执行文件的图标                                         |
 | md_pic                         | README.md中的图片源                                     |
 
@@ -52,11 +52,11 @@ CashFlowDiagramDrawer-main/
 
    下面我们给出两种方案来运行绘图工具程序：
 
-   **方案1**：直接运行可执行文件。这需要你严格按照所有要求提供`data.xlsx`数据文件且构建文件目录结构。一种可行的文件目录结构如下：
+   **方案1 （当前暂未提供可执行文件，此方法暂时无效）**：直接运行可执行文件。这需要你严格按照所有要求提供`data.xlsx`数据文件且构建文件目录结构。一种可行的文件目录结构如下：
 
    ```dash
    Cash Flow Diagram/
-   ├── cash_flow_diagram.exe
+   ├── cash_flow_diagram2.exe
    └── data.xlsx
    ```
 
@@ -70,19 +70,19 @@ CashFlowDiagramDrawer-main/
    | ------------ | ------------------------- | ---------------------------------------- |
    | `pandas`     | `pip install pandas`      |                                          |
    | `xlrd`       | `pip install xlrd==1.2.0` | 只有2.0以下版本的xlrd才支持读取.xlsx文件 |
-   | `matplotlib` | `pip install matplotlib`  |                                          |
+   | `pyecharts`  | `pip install pyecharts`   |                                          |
 
-   我们可以通过修改源代码内`my_drawer`对象的创建函数的实参来改变数据文件路径、数据所在Sheet。
+   我们可以通过修改源代码内`diagram`对象的创建函数的实参来改变数据文件路径、数据所在Sheet、生成现金流量图标题、是否显示具体数值、折线是否平滑等。
 
-   如，设定数据文件路径为`'C:/Users/Username/Documents/example.xlsx'`，数据所在Sheet名称为`'example'`，可以修改源代码倒数第2行的代码`my_drawer = Drawer()`为：
+   如，设定数据文件路径为`'C:/Users/Username/Documents/example.xlsx'`，数据所在Sheet名称为`'example'`，生成现金流量图标题为CASH FLOW DIAGRAM，要求显示具体数值，要求折线不平滑，可以修改源代码倒数第2行的代码`diagram = PyechartsCashFlowDiagram()`为：
 
    ```python
-   my_drawer = Drawer(rd='C:/Users/Username/Documents/example.xlsx',sheet_name='example')
+   diagram = PyechartsCashFlowDiagram(rd='C:/Users/Username/Documents/example.xlsx', sheet_name='example', title='CASH FLOW DIAGRAM', show_figure=True, smooth=False)
    ```
 
-   如果不修改，默认读取与`cash_flow_diagram.py`在同一路径下的名为`data.xlsx`文件中的名为`Cash Flow Diagram`的Sheet作为绘图数据。
+   如果不修改，默认读取与`cash_flow_diagram2.py`在同一路径下的名为`data.xlsx`文件中的名为`Cash Flow Diagram`的Sheet作为绘图数据，生成的现金流量图标题为Cash Flow Diagram，不显示具体数值，折线平滑。
 
-   运行源代码，会跳出Matplotlib的显示窗口。点击下方Save the figure按钮<img src="md_pic/Save the figure.png" alt="img" style="zoom:50%;" />，即可导出绘制出的现金流量图的`.png`文件。
+   运行源代码，会跳出渲染出的html网页。直接截图可获得图片文件。
 
-如果使用者想更加深入地研究绘图工具程序的代码逻辑、对程序做进一步的修改以适应自己的绘图需求，Python源代码文件中已经写好了较为详细的注释，请自行阅读。
+~~如果使用者想更加深入地研究绘图工具程序的代码逻辑、对程序做进一步的修改以适应自己的绘图需求，Python源代码文件中已经写好了较为详细的注释，请自行阅读。~~
 
