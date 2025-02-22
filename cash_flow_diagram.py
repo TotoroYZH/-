@@ -38,7 +38,7 @@ class Drawer:
             max_time (int, optional): The ending year of cash flow diagram. Defaults to 2121.
         '''
         self.colors = [(0,0,0.85),(0.9,0.2,0.2),(1,0.8,0.2),'green'] # blue, orange, yellow, green
-        self.df = pd.read_excel('data.xlsx',sheet_name='Cash Flow Diagram') # recommended xlrd version: 1.2.0
+        self.df = pd.read_excel(rd,sheet_name=sheet_name) # recommended xlrd version: 1.2.0
 
         self.fig, self.ax1 = plt.subplots() # ax1: the left y-axis
         self.ax2 = self.ax1.twinx() # ax2: the right y-axis
