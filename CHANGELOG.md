@@ -21,3 +21,7 @@
 
 ### Removed
 - 删除了原有的程序使用说明.md和.pdf文件
+
+## [1.0.1] - 2025-02-22
+### Fixed
+- 修正了项目源代码文件中Drawer类创建参数`rd`和`sheet_name`没有被传入至`self.pd = pd.read_excel()`的错误
